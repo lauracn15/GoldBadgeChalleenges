@@ -10,17 +10,12 @@ namespace Challenge_02
     {
         public List<ClaimMenu> _menuItem = new List<ClaimMenu>();
          
-        public void CreateNewClaim(ClaimMenu newItemMenu)
+        public void CreateNewClaim(ClaimMenu newMenuItem)
         {
+            _menuItem.Add(newMenuItem);
+        }       
 
-        }
-
-        public void RemoveClaim(ClaimMenu delete)
-        {
-            _menuItem.Remove(delete);
-        }
-
-        public List<ClaimMenu> SeeAllClaims()
+        public List<ClaimMenu> GetClaimMenu()
         {
             return _menuItem;
         }

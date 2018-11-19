@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1DF1BD7-C609-4DD8-B07D-0FCA02D6ED43}</ProjectGuid>
+    <ProjectGuid>{A9BA99F6-8387-46DB-A9DD-B7D6441F6663}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Challenge_02</RootNamespace>
-    <AssemblyName>Challenge_02</AssemblyName>
+    <RootNamespace>Challenge_04</RootNamespace>
+    <AssemblyName>Challenge_04</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClaimMenu.cs" />
-    <Compile Include="ClaimRepository.cs" />
+    <Compile Include="BadgeDictionary.cs" />
+    <Compile Include="BadgeRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

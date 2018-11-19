@@ -9,11 +9,11 @@ namespace Challenge_01
         KomodoMenu newKomodoMenu = new KomodoMenu();
         MenuRepo _menuRepo = new MenuRepo();
 
-        List<KomodoMenu> _komodoItems;
+        List<KomodoMenu>  _komodoItems;
+        private int input;
 
         public void Run()
         {
-            _komodoItems = _menuRepo.GetAllMenu();
             bool isRunning = true;
             while (isRunning)
             {
@@ -23,14 +23,14 @@ namespace Challenge_01
                     "\n3. Remove an item" +
                     "\n4. Exit");
 
-                int input = int.Parse(Console.ReadLine());
+                input = int.Parse(Console.ReadLine());
                 switch (input)
                 {
                     case 1: AddItemToMenu();
                         Console.ReadKey();
                         break;
                     case 2:
-                        GetCreatedMenu();
+                        SeeMenu();
                         Console.ReadKey();
                         break;
                     case 3:RemoveMenuItem();
@@ -64,26 +64,25 @@ namespace Challenge_01
 
             Console.WriteLine("what is the price?");
             newItem.Price = int.Parse(Console.ReadLine());
+
+            _menuRepo.AddItemToMenu(newItem);
         }
-       
-            private void GetCreatedMenu()
+
+        private void SeeMenu()
         {
-            var allItemsInMenu = _menuRepo.GetAllMenu();
-            foreach (var menu in allItemsInMenu)
+            List<KomodoMenu> allItemsInMenu = _menuRepo.GetAllMenu();
+            foreach (KomodoMenu menu in allItemsInMenu)
             {
-                Console.WriteLine($" {menu.Name} + {menu.Ingredients} + {menu.Price} ");
+                Console.WriteLine($" {menu.Name}  {menu.Ingredients}  {menu.Price} ");
+                Console.ReadLine();
             }
         }
 
         private void RemoveMenuItem()
         {
-            foreach (var menu in _komodoItems)
-            {
-                Console.WriteLine($"{menu.Name} + {menu.FoodNumber}");
-            }
             Console.WriteLine("Which menu item would you like to remove?");
-            var removeNumber = int.Parse(Console.ReadLine());
-            foreach (var menu in _komodoItems)
+            int removeNumber = int.Parse(Console.ReadLine());
+            foreach (KomodoMenu menu in _komodoItems)
             {
                 if (menu.FoodNumber == removeNumber)
                 {

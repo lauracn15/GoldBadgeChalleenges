@@ -5,3 +5,10 @@ C:\DotNetProjects\CSharpBasics\CSharpFundies\Challenge_01\bin\Debug\Challenge_01
 C:\DotNetProjects\CSharpBasics\CSharpFundies\Challenge_01\bin\Debug\Challenge_01.pdb
 C:\DotNetProjects\CSharpBasics\CSharpFundies\Challenge_01\obj\Debug\Challenge_01.exe
 C:\DotNetProjects\CSharpBasics\CSharpFundies\Challenge_01\obj\Debug\Challenge_01.pdb
+C:\DotNetProjects\Challenges\Challenge_01\bin\Debug\Challenge_01.exe.config
+C:\DotNetProjects\Challenges\Challenge_01\bin\Debug\Challenge_01.exe
+C:\DotNetProjects\Challenges\Challenge_01\bin\Debug\Challenge_01.pdb
+C:\DotNetProjects\Challenges\Challenge_01\obj\Debug\Challenge_01.csprojAssemblyReference.cache
+C:\DotNetProjects\Challenges\Challenge_01\obj\Debug\Challenge_01.csproj.CoreCompileInputs.cache
+C:\DotNetProjects\Challenges\Challenge_01\obj\Debug\Challenge_01.exe
+C:\DotNetProjects\Challenges\Challenge_01\obj\Debug\Challenge_01.pdb
